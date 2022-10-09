@@ -17,7 +17,7 @@ import 'package:local_delivery_admin/utils/Constants.dart';
 import '../components/DeliveryPersonDocumentWidget.dart';
 import '../components/DocumentWidget.dart';
 
-List<MenuItemModel> getMenuItems() {
+List<MenuItemModel> getMenuItems09_10_2022() {
   List<MenuItemModel> list = [];
   list.add(MenuItemModel(index: DASHBOARD_INDEX, imagePath: 'assets/icons/ic_dashboard.png', title: language.dashboard, widget: HomeWidget()));
   list.add(MenuItemModel(index: COUNTRY_INDEX, imagePath: 'assets/icons/ic_country.png', title: language.country, widget: CountryWidget()));
@@ -25,6 +25,22 @@ List<MenuItemModel> getMenuItems() {
   list.add(MenuItemModel(index: EXTRA_CHARGES_INDEX, imagePath: 'assets/icons/ic_extra_charges.png', title: language.extra_charges, widget: ExtraChargesWidget()));
   list.add(MenuItemModel(index: PARCEL_TYPE_INDEX, imagePath: 'assets/icons/ic_parcel_type.png', title: language.parcel_type, widget: ParcelTypeWidget()));
   list.add(MenuItemModel(index: PAYMENT_GATEWAY_INDEX, imagePath: 'assets/icons/ic_payment_gateway.png', title: language.payment_gateway, widget: PaymentGatewayWidget()));
+  list.add(MenuItemModel(index: ORDER_INDEX, imagePath: 'assets/icons/ic_orders.png', title: language.all_order, widget: OrderWidget()));
+  list.add(MenuItemModel(index: DOCUMENT_INDEX, imagePath: 'assets/icons/ic_orders.png', title: language.document, widget: DocumentWidget()));
+  list.add(MenuItemModel(index: DELIVERY_PERSON_DOCUMENT_INDEX, imagePath: 'assets/icons/ic_orders.png', title: language.delivery_person_documents, widget: DeliveryPersonDocumentWidget()));
+  list.add(MenuItemModel(index: USER_INDEX, imagePath: 'assets/icons/ic_users.png', title: language.users, widget: UserWidget()));
+  list.add(MenuItemModel(index: DELIVERY_PERSON_INDEX, imagePath: 'assets/icons/ic_delivery_boy.png', title: language.delivery_person, widget: DeliveryBoyWidget()));
+  list.add(MenuItemModel(index: NOTIFICATION_SETTING_INDEX, imagePath: 'assets/icons/ic_notification_setting.png', title: language.notification_setting, widget: NotificationSettingScreen()));
+  return list;
+}
+List<MenuItemModel> getMenuItems() {
+  List<MenuItemModel> list = [];
+  list.add(MenuItemModel(index: DASHBOARD_INDEX, imagePath: 'assets/icons/ic_dashboard.png', title: language.dashboard, widget: HomeWidget()));
+  list.add(MenuItemModel(index: COUNTRY_INDEX, imagePath: 'assets/icons/ic_country.png', title: language.country, widget: CountryWidget()));
+  list.add(MenuItemModel(index: CITY_INDEX, imagePath: 'assets/icons/ic_city.png', title: language.city, widget: CityWidget()));
+  list.add(MenuItemModel(index: EXTRA_CHARGES_INDEX, imagePath: 'assets/icons/ic_extra_charges.png', title: language.extra_charges, widget: ExtraChargesWidget()));
+  list.add(MenuItemModel(index: PARCEL_TYPE_INDEX, imagePath: 'assets/icons/ic_parcel_type.png', title: language.parcel_type, widget: ParcelTypeWidget()));
+  // list.add(MenuItemModel(index: PAYMENT_GATEWAY_INDEX, imagePath: 'assets/icons/ic_payment_gateway.png', title: language.payment_gateway, widget: PaymentGatewayWidget()));
   list.add(MenuItemModel(index: ORDER_INDEX, imagePath: 'assets/icons/ic_orders.png', title: language.all_order, widget: OrderWidget()));
   list.add(MenuItemModel(index: DOCUMENT_INDEX, imagePath: 'assets/icons/ic_orders.png', title: language.document, widget: DocumentWidget()));
   list.add(MenuItemModel(index: DELIVERY_PERSON_DOCUMENT_INDEX, imagePath: 'assets/icons/ic_orders.png', title: language.delivery_person_documents, widget: DeliveryPersonDocumentWidget()));

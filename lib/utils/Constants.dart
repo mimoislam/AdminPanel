@@ -2,7 +2,7 @@ var errorThisFieldRequired = 'This field is required';
 // const currencySymbol = '₹';
 const currencySymbol = 'da';
 
-const mBaseUrl = 'https://admin.livriloo-dz.com/api/';
+const mBaseUrl = 'http://127.0.0.1:8000/api/';
 
 const CLIENT = 'client';
 const DELIVERYMAN = 'delivery_man';
